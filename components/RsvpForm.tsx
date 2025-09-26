@@ -28,7 +28,7 @@ const RsvpForm: React.FC = () => {
         setError('');
         setResponseMessage('');
         try {
-            const message = await generateThankYouMessage(formData.name);
+            const message = await generateThankYouMessage(formData);
             setResponseMessage(message);
         } catch (err) {
             console.error(err);
@@ -38,7 +38,7 @@ const RsvpForm: React.FC = () => {
         } finally {
             setLoading(false);
         }
-    }, [formData.name]);
+    }, [formData]);
 
     return (
         <section className="py-20 md:py-32 bg-cover bg-center" style={{backgroundImage: "url('https://www.transparenttextures.com/patterns/az-subtle.png')"}}>

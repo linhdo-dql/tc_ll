@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import Hero from './components/Hero';
@@ -7,6 +6,7 @@ import EventDetails from './components/EventDetails';
 import Gallery from './components/Gallery';
 import RsvpForm from './components/RsvpForm';
 import Footer from './components/Footer';
+import MusicPlayer from './components/MusicPlayer';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -27,6 +27,7 @@ const App: React.FC = () => {
         <RsvpForm />
       </main>
       <Footer />
+      <MusicPlayer />
     </div>
   );
 };
